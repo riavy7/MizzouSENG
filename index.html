@@ -29,6 +29,8 @@
                         return candidate.choice + " " + candidate.value + "%";
                     });
                 
+                d3.select("#graph").selectAll("div").style("color","blue");
+
                 candidateWrapper.append("div")
                     .classed("bar", true)
                     .transition()
